@@ -1,0 +1,203 @@
+*{padding: 0;margin: 0;border: 0; }
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+/* input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;} */
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;  font-family: 'Lato', sans-serif;}
+.content{
+    max-width: 1024px;
+    margin: auto;
+    padding: 0px 10px;
+}
+.main_menu{
+    box-sizing: content-box;
+    top: 0;
+    background-color: black; 
+}
+.l,.r{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+}
+
+nav{
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+nav a{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #979898;
+    margin-top: 10px;
+}
+.active{
+    color: #3788be ;
+}
+.logo{
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight:900;
+    text-transform: uppercase;
+    color: white;
+    margin:  0px 60px;
+}
+.contact_as{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Open Sans' , sans-serif;
+    max-width: 1024px;
+
+}
+h1{
+   font-family: 'lato' , sans-serif; 
+   font-size: 44px ;
+   font-weight: 300;
+   margin-top: 60px;
+}
+.line{
+    height: 1px;
+    width: 150px;
+    background-color: #979898;
+    margin: 40px 0px ;
+}
+.contact_us_slogan{
+    max-width: 742px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #606060;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-align: center;
+}
+.contact_box{
+    display: grid;
+    margin-top: 70px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+}
+h2{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Lato";
+}
+.about_form , .about_address{
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #606060;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+form{
+    font-weight: 400;
+font-family: "Open Sans";
+}
+.name{
+    margin-top: 15px;
+    width: 100%;
+    padding: 16px;
+    background-color: #edf1f2;
+    color: black;
+}
+.email{
+    margin-top: 15px;
+    width: 100%;
+    padding: 16px;
+    background-color: #edf1f2;
+    color: black;
+}
+.massange{
+    margin-top: 15px;
+    height: 221px ;
+    width: 100%;
+    padding: 16px;
+    background-color: #edf1f2;
+    color: black;
+    resize: none;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+.submit{
+    margin-top: 15px;
+    background-color: #2980b9;
+    color: white;
+    padding: 15px 90px ;
+}
+.submit:hover{
+    background-color: #3192d3;
+}
+.shtab_adress{
+    line-height: 20px;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #606060;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+#map{
+    margin-top: 25px;
+    width: 100%;
+    height: 190px ;
+    border: 2px solid springgreen;
+}
+
+footer{
+    margin-top: 100px;
+    height: 55px;
+    background-color: black;
+    width: 100%;
+
+    
+}
+.media{
+    color: white;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    height: 100%;
+}
+.social{
+    display: flex;
+    width: 170px;
+    justify-content: space-between;
+}
+.comand_email{
+    font-family:  'Open Sans', sans-serif ;
+    font-size: 12px;
+    text-align: right;
+}
+
+
+@media ( max-width: 620px){
+    .contact_box{
+        display: grid;
+        margin-top: 70px;
+        grid-template-columns:  1fr;
+        grid-row-gap: 50px;
+    }
+}
+@media ( max-width: 360px){
+    .logo{
+        margin:  0px 30px;
+    }
+    footer{
+        height: 60px;
+    }
+}
